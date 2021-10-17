@@ -1,0 +1,42 @@
+body {
+    background:rgb(56, 52, 52);
+
+}
+page {
+background:white;
+display: block;
+margin: 0 auto;
+box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+page[size="A4"]{
+width: 21cm;
+height: 29.7cm;
+}
+
+.container {
+    padding: 1rem;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
+.item {
+    width: 20rem;
+    padding: 2rem 1rem;
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;  
+    background: blue;
+    border: 3px solid red;
+    color: white;
+    margin: 0.375rem; 
+}
+.item-1 {
+   flex-basis: 30rem;
+}
+.item-2 {
+   flex-basis: 0rem;
+}
+.item-3 {
+   flex-basis: 50rem;
+}
