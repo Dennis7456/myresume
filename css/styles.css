@@ -15,28 +15,21 @@ height: 29.7cm;
 }
 
 .container {
-    padding: 1rem;
-    background-color: green;
-    display: flex;
-    flex-direction: row;
+    padding: 1in;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 30% 10% 60%;
+    grid-template-rows: 29.7cm;
 }
-.item {
-    width: 20rem;
-    padding: 2rem 1rem;
-    font-size: 2rem;
-    line-height: 1;
-    text-align: center;  
+
+.col-1{
+    background: green;
+}
+
+.col-2{
     background: blue;
-    border: 3px solid red;
-    color: white;
-    margin: 0.375rem; 
 }
-.item-1 {
-   flex-basis: 30rem;
-}
-.item-2 {
-   flex-basis: 0rem;
-}
-.item-3 {
-   flex-basis: 50rem;
+
+.col-3{
+    background: yellow;
 }
