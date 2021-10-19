@@ -1,72 +1,104 @@
+/*GLOBAL STYLES*/
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background:rgb(56, 52, 52);
+    background-color: rgb(56, 52, 52);
     font-family: Arial, Helvetica, sans-serif;
-
-}
-page {
-background:white;
-display: block;
-margin: 0 auto;
-box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
-font-family: 'Raleway', sans-serif;
+    margin:  50px;
 }
 
-page[size="A4"]{
-width: 21cm;
-height: 29.7cm;
+/* Page */
+
+.page {
+    background-color: white;
+    width:794px;
+    height:1122px;
+    margin: 0 auto;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    font-family: 'Raleway', sans-serif;
 }
+
+/* Each item in the grid contains numbers */
+
+.item {
+    /* Center the contents of the grid items. Making each grid item a Flex Container */ 
+    display:  flex;
+
+    /* Horizontal and Vertical centering */ 
+    justify-content: center;
+    align-items: center;
+    border:  5px solid #87b5ff;
+    border-radius: 3px;
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #1c57b5;
+}
+
+/* CSS Grid Styles */
 
 .container {
-    padding: 1in;
-    background: white;
     display: grid;
-    grid-template-columns: 30% 10% 60%;
-    grid-template-rows: 4.95cm 4.95cm 4.95cm 4.95cm 4.95cm 4.95cm;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
     grid-template-areas:
-      "info info"
-      "profilesummary profilesummary"
-      "skills skills"
-      "experience experience"
-      "education education"
-      "links links";
-  
+    "title description";
+
+    padding-top: 90px;
+    padding-left: 90px;
+    padding-right: 90px;
 }
 
-.col-1{
-    background: white;
+.col-1 {
+    grid-area: title;
 }
 
-.col-2{
-    background: white;
-}
-
-.col-3{
-    background: white;
+.col-2 {
+    grid-area: description;
 }
 
 .row-1 {
-    background: LightSalmon;
-    grid-area: info;
+    
+    height: 155px;
 }
+
 .row-2 {
-    background: PaleTurquoise;
-    grid-area: info;
+    
+    height: 155px;
 }
 .row-3 {
-    background: lightpink;
-    grid-area: info;
+    
+    height: 155px;
 }
+
 .row-4 {
-    background: LightSkyBlue;
-    grid-area: info;
+    
+    height: 155px;
 }
 .row-5 {
-    background: PaleGreen;
-    grid-area: info;
+    padding-top: 10px;
+    height: 155px;
 }
+
 .row-6 {
-    background: BlanchedAlmond;
-    grid-area: info;
+    
+    height: 155px;
+}
+
+#name-large {
+    font-size: 35px;
+}
+
+#role {
+    font-size: 18.5px;
+    color: #FF6347;
+}
+
+#title {
+    font-size: 16px;
 }
 
 hr {
@@ -79,20 +111,11 @@ hr {
     margin-left:0px;
 }
 
-.short-lines {
+.short-line {
     height: 2px;
     width: 10px;
     position: sticky;
     
-}
-
-#name-large {
-    font-size: 35px;
-}
-
-#role {
-    font-size: 18.5px;
-    color: crimson;
 }
 
 #address {
@@ -103,5 +126,27 @@ hr {
 }
 
 #phonenumber {
-    color:crimson;
+    color:#FF6347;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#email {
+    color: darkblue;
+    margin-top: -5px;
+    font-size: 12px;
+    text-decoration: underline;
+    margin-bottom:10px;
+    font-weight: 600;
+}
+
+#description {
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+}
+
+#line-5 {
+    margin-top: 30px;
 }
