@@ -8,6 +8,7 @@ body {
     background-color: rgb(56, 52, 52);
     font-family: Arial, Helvetica, sans-serif;
     margin:  50px;
+    padding: 0px;
 }
 
 /* Page */
@@ -152,8 +153,61 @@ hr {
     margin-top: 30px;
 }
 
-@media only screen and (max-width: 700px) {
-    .page {
-        width:;
-    }
+/* @media only screen and (max-width: 640px) {
+    body {
+        padding-right: 20px;
+        zoom: 35%;
+    } */
+
+.screen-360 {
+    padding-right: 50px;
+    padding-left: -100px;
+    margin: 0px;
+    margin-left: -100px;
+    zoom: 44%;
 }
+
+.screen-600 {
+    zoom: 75%;
+    padding: 0px;
+    margin: 0px;
+    margin-left: -150px;
+    margin-right: 150px;
+    padding-left: 100px;
+
+    
+}
+
+.screen-800 {
+    zoom: 95%;
+    padding: 0px;
+    margin: 0px;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.screen-412 {
+    zoom: 0%;
+}
+
+.screen-320 {
+    zoom: 0%;
+}
+
+.screen-411 {
+    zoom: 50%;
+    padding: 0px;
+    margin: 0px;
+    margin-left: -100px;
+    margin-right: -100px;
+}
+
+.screen-768 {
+    zoom: 90%;
+    margin: 0px;
+    padding: 0px;
+    margin-left: -90px;
+    margin-right: -90px;
+}
+
+>>>>>>> 1c7cb81386550a2b26d41042379745b39da3489c
