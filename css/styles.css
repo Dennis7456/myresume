@@ -19,8 +19,7 @@ body {
     margin: 0 auto;
     box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
     font-family: 'Raleway', sans-serif;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 /* Each item in the grid contains numbers */
@@ -155,6 +154,6 @@ hr {
 
 @media only screen and (max-width: 700px) {
     .page {
-        width:794px;
+        width:;
     }
 }
